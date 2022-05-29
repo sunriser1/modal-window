@@ -20,10 +20,6 @@ button {
   cursor: pointer;
 }
 
-.login {
-  position: relative;
-}
-
 .loginCover {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0.5;
@@ -39,7 +35,7 @@ button {
 
 .container {
   width: 460px;
-  height: 450px;
+  height: 460px;
   padding: 35px;
   margin: auto;
   box-sizing: border-box;
@@ -56,7 +52,6 @@ button {
 
 .greet {
   font-size: 20px;
-
   margin: 0;
   padding: 0;
   color: #eef2f1;
@@ -113,4 +108,10 @@ button {
 
 .thirdRowButton {
   width: 200px;
+}
+
+.attention {
+  margin-top: 15px;
+  color: #ff6565;
+  display: none;
 }

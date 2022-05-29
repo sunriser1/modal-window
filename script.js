@@ -80,7 +80,7 @@ container.style.left = leftContainer;
 
 window.addEventListener('resize', () => {
   leftContainer = window.innerWidth / 2 - 230 + 'px';
-  topContainer = window.innerHeight / 2 - 225 + 'px';
+  topContainer = window.innerHeight / 2 - 230 + 'px';
   container.style.top = topContainer;
   container.style.left = leftContainer;
 });
@@ -91,3 +91,15 @@ for (let each of link) {
     event.preventDefault();
   });
 }
+
+const attention = document.querySelector('.attention');
+const isAgree = document.querySelector('#checkbox');
+const buttonClick = document.querySelectorAll('.container button');
+for (let one of buttonClick) {
+  one.addEventListener('click', () => {
+    if (!isAgree.checked) attention.style.display = 'block';
+  });
+}
+isAgree.addEventListener('click', () => {
+  if (isAgree.checked) attention.style.display = 'none';
+});
