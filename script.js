@@ -33,15 +33,15 @@ github.addEventListener('mouseout', () => {
   github.style.transition = '500ms';
 });
 
-const linkedin = document.querySelector('.linkedin');
-linkedin.addEventListener('mouseover', () => {
-  linkedin.style.borderColor = '#e44e66';
-  linkedin.style.transition = '500ms';
-  linkedin.style.cursor = 'pointer';
+const instagram = document.querySelector('.instagram');
+instagram.addEventListener('mouseover', () => {
+  instagram.style.borderColor = '#e44e66';
+  instagram.style.transition = '500ms';
+  instagram.style.cursor = 'pointer';
 });
-linkedin.addEventListener('mouseout', () => {
-  linkedin.style.borderColor = '#242625';
-  linkedin.style.transition = '500ms';
+instagram.addEventListener('mouseout', () => {
+  instagram.style.borderColor = '#242625';
+  instagram.style.transition = '500ms';
 });
 
 const twitter = document.querySelector('.twitter');
