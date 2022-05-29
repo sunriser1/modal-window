@@ -23,7 +23,6 @@ a:hover {
 .loginCover {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0.5;
-  /* z-index: -1; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -48,11 +47,6 @@ a:hover {
   display: none;
 }
 
-/* .innerContainer {
-  margin: 0;
-  padding: 0;
-} */
-
 .loginHeader {
   margin-bottom: 50px;
 }
@@ -75,10 +69,6 @@ a:hover {
   margin-bottom: 16px;
   color: #c5d3d3;
 }
-
-/* .firstRowContainer {
-  margin-bottom: 16px;
-} */
 
 .firstRowButton,
 .thirdRowButton {
@@ -116,13 +106,6 @@ a:hover {
 .logo {
   width: 35px;
   display: block;
-}
-/* .google:hover {
-  border-color: #34a853;
-  transition: 500ms;
-} */
-span {
-  vertical-align: middle;
 }
 
 .thirdRowButton {
