@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guest page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loginCover"></div>
+
+    <button class="login">Войти</button>
+    <div class="container">
+      <div class="loginHeader">
+        <h1 class="greet">Авторизуйтесь</h1>
+        <p class="greet2">Это не займет больше 5 секунд</p>
+      </div>
+
+      <div class="loginMain">
+        <div class="buttons firstRowContainer">
+          <button class="firstRowButton fb">
+            <img
+              class="logo facebooklogo"
+              src="images/facebook.svg"
+              alt="facebook logo"
+            />
+            <span>Войти с FB</span>
+          </button>
+          <button class="firstRowButton google">
+            <img
+              class="logo googlelogo"
+              src="images/google.svg"
+              alt="google logo"
+            />
+            <span>Войти с Google</span>
+          </button>
+        </div>
+        <div class="buttons">
+          <button class="secondRowButton github">
+            <img
+              class="logo githublogo"
+              src="images/github.svg"
+              alt="github logo"
+            />
+          </button>
+          <button class="secondRowButton linkedin">
+            <img
+              class="logo linkedinlogo"
+              src="images/instagram.svg"
+              alt="linkedin logo"
+            />
+          </button>
+          <button class="secondRowButton twitter">
+            <img
+              class="logo twitterlogo"
+              src="images/twitter.svg"
+              alt="twitter logo"
+            />
+          </button>
+        </div>
+        <div class="telegram">
+          <button class="thirdRowButton tg">
+            <img
+              class="logo telegramlogo"
+              src="images/telegram.svg"
+              alt="telegram logo"
+            />
+            <span>Войти с Telegram</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="loginFooter">
+        <input type="checkbox" id="checkbox" />
+
+        <span class="agreement">
+          <label for="checkbox">Я соглашаюсь с</label>
+          <a href="">правилами пользования сайтом</a>
+          <label for="checkbox">и даю</label>
+          <a href="">согласие на обработку персональных данных</a>
+        </span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
