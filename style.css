@@ -44,6 +44,7 @@ button {
   z-index: 1;
   position: absolute;
   display: none;
+  user-select: none;
 }
 
 .loginHeader {
