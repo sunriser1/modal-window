@@ -4,7 +4,6 @@ const google = document.querySelector('.google');
 google.addEventListener('mouseover', () => {
   google.style.borderColor = '#34a853';
   google.style.transition = '500ms';
-  google.style.cursor = 'pointer';
 });
 google.addEventListener('mouseout', () => {
   google.style.borderColor = '#242625';
@@ -15,7 +14,6 @@ const fb = document.querySelector('.fb');
 fb.addEventListener('mouseover', () => {
   fb.style.borderColor = '#1b74e4';
   fb.style.transition = '500ms';
-  fb.style.cursor = 'pointer';
 });
 fb.addEventListener('mouseout', () => {
   fb.style.borderColor = '#242625';
@@ -26,7 +24,6 @@ const github = document.querySelector('.github');
 github.addEventListener('mouseover', () => {
   github.style.borderColor = '#494949';
   github.style.transition = '500ms';
-  github.style.cursor = 'pointer';
 });
 github.addEventListener('mouseout', () => {
   github.style.borderColor = '#242625';
@@ -37,7 +34,6 @@ const instagram = document.querySelector('.instagram');
 instagram.addEventListener('mouseover', () => {
   instagram.style.borderColor = '#e44e66';
   instagram.style.transition = '500ms';
-  instagram.style.cursor = 'pointer';
 });
 instagram.addEventListener('mouseout', () => {
   instagram.style.borderColor = '#242625';
@@ -48,7 +44,6 @@ const twitter = document.querySelector('.twitter');
 twitter.addEventListener('mouseover', () => {
   twitter.style.borderColor = '#1da1f3';
   twitter.style.transition = '500ms';
-  twitter.style.cursor = 'pointer';
 });
 twitter.addEventListener('mouseout', () => {
   twitter.style.borderColor = '#242625';
@@ -59,7 +54,6 @@ const tg = document.querySelector('.tg');
 tg.addEventListener('mouseover', () => {
   tg.style.borderColor = '#fff';
   tg.style.transition = '500ms';
-  tg.style.cursor = 'pointer';
 });
 tg.addEventListener('mouseout', () => {
   tg.style.borderColor = '#242625';
@@ -79,23 +73,16 @@ login.addEventListener('click', () => {
   loginCover.style.display = 'block';
 });
 
-function getLeftLogin() {
-  return window.innerWidth / 2 - login.clientWidth / 2;
-}
-function getTopLogin() {
-  return window.innerHeight / 2 - login.clientHeight / 2;
-}
-let leftLogin = getLeftLogin() + 'px';
-let topLogin = getTopLogin() + 'px';
-console.log(leftLogin, topLogin);
-login.style.top = topLogin;
-login.style.left = leftLogin;
+let leftContainer = window.innerWidth / 2 - 230 + 'px';
+let topContainer = window.innerHeight / 2 - 225 + 'px';
+container.style.top = topContainer;
+container.style.left = leftContainer;
 
 window.addEventListener('resize', () => {
-  leftLogin = getLeftLogin() + 'px';
-  topLogin = getTopLogin() + 'px';
-  login.style.top = topLogin;
-  login.style.left = leftLogin;
+  leftContainer = window.innerWidth / 2 - 230 + 'px';
+  topContainer = window.innerHeight / 2 - 225 + 'px';
+  container.style.top = topContainer;
+  container.style.left = leftContainer;
 });
 
 const link = document.querySelectorAll('a');

@@ -16,6 +16,10 @@ a:hover {
   color: #6d7d7c;
 }
 
+button {
+  cursor: pointer;
+}
+
 .login {
   position: relative;
 }
@@ -42,8 +46,7 @@ a:hover {
   background-color: #181c1b;
   border-radius: 15px;
   z-index: 1;
-  position: relative;
-  margin-top: 30px;
+  position: absolute;
   display: none;
 }
 
